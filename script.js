@@ -77,9 +77,6 @@ var app = new Vue({
             });
             this.players.splice(index, 1);
         },
-        showRole: function(){
-            alert('Hello World!');
-        },
         rndBetween: function (min, max) {
             return Math.floor(Math.random() * max) + min;
         },
@@ -116,4 +113,6 @@ var app = new Vue({
     },
     
 })
-
+function showRole(){
+    alert('hello world!');
+}
