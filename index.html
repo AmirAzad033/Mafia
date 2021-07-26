@@ -51,14 +51,14 @@
             @keyup.enter="addPlayer()">
         <button @click="addPlayer()" class="buttons">افزودن بازیکن</button>
         <ol>
-            <li v-for="(player, index) in players" id="role">
+            <li v-for="(player, index) in players" id="role" onclick="showRole()">
                 <button class="button button-outline button-small button-red" @click="removePlayer(index)">x</button>
                 {{player.name}}
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                {{alert(player.role.name)}}
+                {{function showRole(){alert(player.role.name)}}}
             </li>
         </ol>
 
