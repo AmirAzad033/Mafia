@@ -2,8 +2,8 @@
     padding: 60px !important;
 }
 @font-face{
-    font-family: myFont;
-    src: url("fonts/lale.ttf");
+    font-family: 'myFont';
+    src: url('fonts/lale.ttf') format('ttf');
 }
 .crossed {
     text-decoration: line-through;
@@ -28,7 +28,7 @@
     margin-right: 10px;
     width: 150px;
     display: inline-block;
-    font: ;
+    font: myFont;
     font-size: 20px;
 }
 
