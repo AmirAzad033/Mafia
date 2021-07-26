@@ -32,7 +32,7 @@
             <option disabled value="" class="labels">لطفا نقش را انتخاب کنید</option>
             <option v-for="(role, index) in default_roles">{{role}}</option>
         </select>
-        <button @click="addRole()" class="buttons">افزودن</button>
+        <button @click="addRole()" class="buttons">افزودن نقش</button>
         <ol>
             <li v-for="(role, index) in roles" class="labels">
                 <button class="button button-outline button-small button-red" @click="removeRole(index)">x</button>
