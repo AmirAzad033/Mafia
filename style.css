@@ -23,10 +23,7 @@
     border-color: red !important;
     color: red !important;
 }
-.button-red:hover{
-    border-color: black !important;
-    color: black !important;
-}
+
 .statistics span {
     margin-right: 10px;
     width: 150px;
