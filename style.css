@@ -41,8 +41,15 @@ h1{
     
 }
 h1:hover{
-    color:#000000;
+    color: blueviolet;
     cursor: pointer;
+    
+}
+h1:visited{
+    font-family: 'myFont';
+    color:#707070;
+    vertical-align: middle;
+    text-align: center;
 }
 #player{
     font-family: 'myFont';
