@@ -113,6 +113,4 @@ var app = new Vue({
     },
     
 })
-function showRole(){
-    alert('hello world!');
-}
+
