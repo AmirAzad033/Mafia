@@ -28,7 +28,7 @@
     margin-right: 10px;
     width: 150px;
     display: inline-block;
-    font: myFont;
+    font-family: 'myFont';
     font-size: 20px;
 }
 
