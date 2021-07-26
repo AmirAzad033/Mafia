@@ -52,11 +52,15 @@
         <button @click="addPlayer()" class="buttons">افزودن بازیکن</button>
         <ol>
             <li v-for="(player, index) in players" class="labels" @click="showRole()">
-                <button class="button button-outline button-small button-red" @click="removePlayer(index)">X</button>
+
+                <button class="button button-outline button-small button-red"
+                 @click="removePlayer(index)">X</button>
+
                 {{player.name}}
                 
-
-                <!--{{player.role.name}}-->
+                {{player.index}}
+                
+                {{player.role.name}}
             </li>
         </ol>
 
