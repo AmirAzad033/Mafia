@@ -34,7 +34,7 @@
         </select>
         <button @click="addRole()" class="buttons">افزودن</button>
         <ol>
-            <li v-for="(role, index) in roles">
+            <li v-for="(role, index) in roles" class="labels">
                 <button class="button button-outline button-small button-red" @click="removeRole(index)">x</button>
                 <span :class="!isEmptyObj(role.player) ? 'crossed' : ''">
                     {{role.name}}
@@ -47,7 +47,7 @@
             @keyup.enter="addPlayer()">
         <button @click="addPlayer()" class="buttons">افزودن بازیکن</button>
         <ol>
-            <li v-for="(player, index) in players">
+            <li v-for="(player, index) in players" class="labels">
                 <button class="button button-outline button-small button-red" @click="removePlayer(index)">X</button>
                 {{player.name}}
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
