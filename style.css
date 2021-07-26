@@ -55,15 +55,9 @@ h1:hover{
     vertical-align: middle;
     text-align: center;
 }
-.labelsr{
-    font-family: 'myFont';
-    font-size: 20px;
-}
-.labelsr:hover{
-    font-family: 'myFont';
-    font-size: 20px;
-    color:#707070;
+.labels:hover{
     cursor: pointer;
+    color: blueviolet;
 }
 .buttons{
     font-family: 'myFont';
