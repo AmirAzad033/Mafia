@@ -70,7 +70,7 @@ var app = new Vue({
             this.roles.splice(index, 1);
         },
         showRole: function(index){
-            var role = this.roles[index].player;
+            var role = this.player.role.name;
             alert(role);
         },
         removePlayer: function (index) {
