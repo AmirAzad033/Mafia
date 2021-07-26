@@ -49,7 +49,19 @@ h1:hover{
 }
 .labels{
     font-family: 'myFont';
-    font-size: 15px;
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+.labelsr{
+    font-family: 'myFont';
+    font-size: 20px;
+}
+.labelsr:hover{
+    font-family: 'myFont';
+    font-size: 20px;
+    color:#707070;
+    cursor: pointer;
 }
 .buttons{
     font-family: 'myFont';

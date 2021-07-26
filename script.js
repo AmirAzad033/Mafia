@@ -69,6 +69,9 @@ var app = new Vue({
             }
             this.roles.splice(index, 1);
         },
+        showRole: function(index){
+            alert(this.roles[index].player);
+        },
         removePlayer: function (index) {
             this.roles.map(x => {
                 if (x.player === this.players[index]) {
