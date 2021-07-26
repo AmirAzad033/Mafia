@@ -1,16 +1,19 @@
 .app {
-    padding: 50px !important;
+    padding: 60px !important;
 }
-
+@font-face{
+    font-family: myFont;
+    src: url("fonts/lale.ttf");
+}
 .crossed {
     text-decoration: line-through;
 }
 
 .button-small {
-    font-size: .8rem;
+    font-size: 1.2rem;
     height: 2.3rem;
     line-height: 2.3rem;
-    padding: 0 1.5rem;
+    padding: 0 1.7rem;
     float: left;
     margin-top: 1px;
     margin-right: 10px;
@@ -25,20 +28,17 @@
     margin-right: 10px;
     width: 150px;
     display: inline-block;
-    
+    font: ;
     font-size: 20px;
 }
 
 h1{
     color:#707070;
     vertical-align: middle;
+    text-align: center;
   
 }
 h1:hover{
     color:#000000;
     cursor: pointer;
 }
-@font-face {
-    font-family: myFont; /*The name you choose goes here*/
-    src: url("fonts/lale.ttf");
-  }
