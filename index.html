@@ -43,16 +43,20 @@
         </ol>
         <hr>
         <label for="player" class="labels">بازیکنان</label>
-        <input id="player" placeholder="نام بازیکن را انتخاب کنید" type="text" v-model="new_player"
+        <input id="player" placeholder="نام بازیکن را بنویسید" type="text" v-model="new_player"
             @keyup.enter="addPlayer()">
         <button @click="addPlayer()" class="buttons">افزودن بازیکن</button>
         <ol>
-            <li v-for="(player, index) in players" class="labels">
+            <li v-for="(player, index) in players" class="labels" onclick="fun()">
                 <button class="button button-outline button-small button-red" @click="removePlayer(index)">X</button>
                 {{player.name}}
-                
+                <script>
+                    function fun(){
+                        alert('hello world!');
+                    }
+                </script>
 
-                {{player.role.name}}-->
+                {{player.role.name}}
             </li>
         </ol>
 
