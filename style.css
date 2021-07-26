@@ -44,8 +44,10 @@ h1:hover{
     cursor: pointer;
 }
 #player{
-    color:#000000;
-    cursor: pointer;
+    font-family: 'myFont';
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
 }
 .labels{
     font-family: 'myFont';
