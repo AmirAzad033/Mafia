@@ -57,7 +57,14 @@
                  @click="removePlayer(index)">X</button>
 
                 {{player.name}}
-                <p style="color: white;" id="labell">{{player.role.name}}</p>
+
+                {{player.role.name}}
+                <script>
+                    
+                    function showRole(){
+                        alert('Hello World!');
+                    }
+                </script>
                 
                 
             </li>
