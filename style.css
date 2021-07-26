@@ -25,18 +25,14 @@
     margin-right: 10px;
     width: 150px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 25px;
 }
-.header{
-    padding: 40px;
-    text-align: center;
-    vertical-align: middle;
-    background-image: linear-gradient(45deg, #2AF598 0%, #009EFD 100%);
-    color: white;
-    font-size: 30px;
+
+h1{
+    color:#707070;
+  
 }
 h1:hover{
+    color:#000000;
     cursor: pointer;
-    color:#707070;
-   
 }
