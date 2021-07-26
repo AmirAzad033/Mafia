@@ -5,7 +5,7 @@ var app = new Vue({
         new_role: '',
         players: [],
         roles: [],
-        default_roles: ['Godfather', 'Mafia', 'Doctor', 'Detective', 'Armoured', 'Sniper' ,'Citizen', 'Silencer', 'Natasha', 'Freemason', 'Terror', 'Negotiator', 'Reporter']
+        default_roles: ['رئیس مافیا', 'مافیا', 'دکتر', 'کارآگاه', 'جان سخت', 'تک تیرانداز' ,'شهروند', 'دکتر لکتر','شهردار']
     },
     created: function () {
         this.load();
@@ -44,13 +44,13 @@ var app = new Vue({
                         new_roles[rndIndex].player = this.players[this.players.length - 1];
                         this.new_player = '';
                     } else {
-                        alert("All roles has been assigned to players.");
+                        alert("تمام نقش ها اعطا شد");
                     }
                 } else {
-                    alert("Roles are empty.");
+                    alert("نقشی نمانده است");
                 }
             } else {
-                alert("Player's name is empty.");
+                alert("نام بازیکن خالی است!");
             }
         },
         addRole: function () {
@@ -58,7 +58,7 @@ var app = new Vue({
                 const new_role = { name: this.new_role, player: {} };
                 this.roles.push(new_role);
             } else {
-                alert("Please select a role.");
+                alert("لطفا یک نقش را انتخاب کنید.");
             }
         },
         removeRole: function (index) {
