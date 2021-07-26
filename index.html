@@ -22,11 +22,11 @@
         </div>
         <hr>
         <div class="statistics">
-            <span>همه : <b>{{roles.length || 0}}</b></span>
-            <span style="margin-top: 25px;">باقیمانده :
+            <span style="color: red">همه : <b>{{roles.length || 0}}</b></span>
+            <span style="color: red;">باقیمانده :
                 <b>{{roles.length - players.length}}</b></span>
             <br>
-            <span v-for="role in roles_count">
+            <span v-for="role in roles_count" style="margin-top: 10px;">
                 {{role.name}} : <b>{{role.count}}</b>
             </span>
         </div>
@@ -59,7 +59,7 @@
                 {{player.name}}
                 
                 {{player.index}}
-                
+
                 {{player.role.name}}
             </li>
         </ol>
