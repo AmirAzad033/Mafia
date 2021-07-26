@@ -77,6 +77,7 @@ var app = new Vue({
             });
             this.players.splice(index, 1);
         },
+        
         rndBetween: function (min, max) {
             return Math.floor(Math.random() * max) + min;
         },
@@ -111,4 +112,6 @@ var app = new Vue({
             return Object.entries(obj).length === 0;
         }
     },
+    
 })
+

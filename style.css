@@ -76,3 +76,6 @@ h1:visited{
     font-family: 'myFont';
     font-size: 15px;
 }
+#labell:hover{
+    color:#707070;
+}
