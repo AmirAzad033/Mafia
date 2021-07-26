@@ -24,16 +24,16 @@
                 <b>{{roles.length - players.length}}</b></span>
             <br>
             <span v-for="role in roles_count">
-                {{role.name}} = <b>{{role.count}}</b>
+                {{role.name}} : <b>{{role.count}}</b>
             </span>
         </div>
         <hr>
-        <label for="role">Roles</label>
+        <label for="role">نقش ها</label>
         <select id="role" v-model="new_role">
-            <option disabled value="">Please select one</option>
+            <option disabled value="">لطفا نقش را انتخاب کنید</option>
             <option v-for="(role, index) in default_roles">{{role}}</option>
         </select>
-        <button @click="addRole()">Add new role</button>
+        <button @click="addRole()">افزودن</button>
         <ol>
             <li v-for="(role, index) in roles">
                 <button class="button button-outline button-small button-red" @click="removeRole(index)">x</button>
@@ -44,9 +44,9 @@
         </ol>
         <hr>
         <label for="player">Players</label>
-        <input id="player" placeholder="Type player's name and hit Enter" type="text" v-model="new_player"
+        <input id="player" placeholder="نام بازیکن را انتخاب کنید" type="text" v-model="new_player"
             @keyup.enter="addPlayer()">
-        <button @click="addPlayer()">Add new player</button>
+        <button @click="addPlayer()">افزودن بازیکن</button>
         <ol>
             <li v-for="(player, index) in players">
                 <button class="button button-outline button-small button-red" @click="removePlayer(index)">x</button>

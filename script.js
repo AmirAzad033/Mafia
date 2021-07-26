@@ -44,7 +44,7 @@ var app = new Vue({
                         new_roles[rndIndex].player = this.players[this.players.length - 1];
                         this.new_player = '';
                     } else {
-                        alert("تمام نقش ها اعطا شد");
+                        alert("نقش جدیدی انتخاب کنید");
                     }
                 } else {
                     alert("نقشی نمانده است");
