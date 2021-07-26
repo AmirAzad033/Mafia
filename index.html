@@ -45,7 +45,7 @@
         <label for="player" class="labels">بازیکنان</label>
         <input id="player" placeholder="نام بازیکن را انتخاب کنید" type="text" v-model="new_player"
             @keyup.enter="addPlayer()">
-        <button @click="addPlayer()" class="labels">افزودن بازیکن</button>
+        <button @click="addPlayer()" class="buttons">افزودن بازیکن</button>
         <ol>
             <li v-for="(player, index) in players">
                 <button class="button button-outline button-small button-red" @click="removePlayer(index)">❌</button>
