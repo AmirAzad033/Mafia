@@ -32,7 +32,7 @@
         </div>
         <hr>
         <label for="role" class="labels">نقش ها</label>
-        <select id="role" v-model="new_role">
+        <select id="roles" v-model="new_role">
             <option disabled value="" class="labels">لطفا نقش را انتخاب کنید</option>
             <option v-for="(role, index) in default_roles">{{role}}</option>
         </select>
