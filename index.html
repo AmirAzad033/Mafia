@@ -51,9 +51,9 @@
             @keyup.enter="addPlayer()">
         <button @click="addPlayer()" class="buttons">افزودن بازیکن</button>
         <ol>
-            <liid="role">
+            <li id="role">
                 <button class="button button-outline button-small button-red" @click="removePlayer(index)">x</button>
-                <p  v-for="(player, index) in players" @click="alert(player.role.name)">
+                <p @click="alert(player.role.name)">
                     {{player.name}}
                 </p>
             </li>
