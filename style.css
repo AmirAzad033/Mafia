@@ -61,7 +61,7 @@ h1:visited{
     font-size: 20px;
     vertical-align: middle;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .labels:hover{
     cursor: pointer;
@@ -69,12 +69,16 @@ h1:visited{
 }
 .buttons{
     font-family: 'myFont';
-    font-size: 15px;
-    margin-top: 20px;
+    font-size: 20px;
+    margin-top: 40px;
 }
 #role{
     font-family: 'myFont';
     font-size: 15px;
+}
+#role:hover{
+    color:blueviolet;
+    cursor: pointer;
 }
 #labell:hover{
     color:#707070;
