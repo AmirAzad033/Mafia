@@ -34,7 +34,7 @@
         <label for="role" class="labels">نقش ها</label>
         <select id="roles" v-model="new_role">
             <option disabled value="" class="labels">لطفا نقش را انتخاب کنید</option>
-            <option v-for="(role, index) in default_roles">{{role}}</option>
+            <option v-for="(role, index) in default_roles" class="labels">{{role}}</option>
         </select>
         <button @click="addRole()" class="buttons">افزودن نقش</button>
         <ol>
@@ -51,11 +51,10 @@
             @keyup.enter="addPlayer()">
         <button @click="addPlayer()" class="buttons">افزودن بازیکن</button>
         <ol>
-            <li v-for="(player, index) in players" id="role">
+            <li v-for="(player, index) in players" id="role" click="alert(player.role.name)>
                 <button class="button button-outline button-small button-red" @click="removePlayer(index)">x</button>
-                <p @click="alert(player.role.name)">
-                    {{player.name}}
-                </p>
+                {{player.name}}
+                
             </li>
         </ol>
 
